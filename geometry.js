@@ -4,12 +4,13 @@ module.exports.distance = function(pointA, pointB, callback){
 	var distance = Math.sqrt(sumOfSquares);
 
 	callback(null, distance);
-}
+};
 
-module.exports.radiusToDistance = function(reach, distance, callback){
-	if( reach>distance){
+module.exports.reachCalculation = function(reach, distance, callback){
+	if(reach>distance){
 		callback(null, Math.pow(reach-distance,2));
 	}else{
 		callback(null, 0);
 	}
-}
+};
+
