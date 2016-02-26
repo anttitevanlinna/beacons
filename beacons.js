@@ -8,7 +8,7 @@ module.exports.bestPoint = function(linkStations, deviceLocation, callback){
 			geometry.reachCalculation(station.reach, distance, function(error, power){
 				if( power > 0 && power > bestPower){
 					bestStation = station;
-					bestPower = power;
+					bestStation.power = bestPower = power;
 				}
 			});
 		});
