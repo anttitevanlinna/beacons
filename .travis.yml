@@ -1,6 +1,6 @@
-sudo: false
 language: node_js
 node_js:
-- '0.10'
-script: nodeunit test
-script: node calculator.js
+- "0.10"
+script: 
+- "nodeunit test"
+- "node calculator.js"
