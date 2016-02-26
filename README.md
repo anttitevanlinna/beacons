@@ -13,3 +13,7 @@ node calculator.js
 ## Inputs
 
 Fill in ./input.json
+
+## Travis CI
+
+https://travis-ci.org/anttitevanlinna/beacons
