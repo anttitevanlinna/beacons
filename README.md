@@ -1,6 +1,6 @@
 # beacon calculator
 
-Simple geometric calculator
+Homework for Nikke
 
 ## Author
 
@@ -8,7 +8,7 @@ anttitevanlinna (find me on twitter, if needed)
 
 ## Running Locally
 
-node calculate.js
+node calculator.js
 
 ## Inputs
 
