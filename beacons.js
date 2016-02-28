@@ -1,4 +1,4 @@
-module.exports.bestPoint = function(linkStations, deviceLocation, callback){
+exports.bestPoint = function(linkStations, deviceLocation, callback){
 
 	var geometry = require('./geometry');
 	var bestStation = undefined;
