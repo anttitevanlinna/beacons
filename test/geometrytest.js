@@ -29,7 +29,7 @@ exports.distanceZeroSquareRoot = function (test) {
 
 var powerTestTemplate = function(test, reach, distance, expected){
 	test.expect(1);
-	geometry.reachCalculation(reach,distance, function(error, power){
+	geometry.powerCalculation(reach,distance, function(error, power){
 		test.equals(expected, power, "got "+power);
 		test.done();
 	});

@@ -5,7 +5,7 @@ module.exports.bestPoint = function(linkStations, deviceLocation, callback){
 	var bestPower = 0;
 	linkStations.forEach( function(station){
 		geometry.distance(deviceLocation, station, function(error, distance){
-			geometry.reachCalculation(station.reach, distance, function(error, power){
+			geometry.powerCalculation(station.reach, distance, function(error, power){
 				if( power > 0 && power > bestPower){
 					bestStation = station;
 					bestStation.power = bestPower = power;

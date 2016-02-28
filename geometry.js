@@ -6,7 +6,7 @@ module.exports.distance = function(pointA, pointB, callback){
 	callback(null, distance);
 };
 
-module.exports.reachCalculation = function(reach, distance, callback){
+module.exports.powerCalculation = function(reach, distance, callback){
 	if(reach>distance){
 		callback(null, Math.pow(reach-distance,2));
 	}else{
